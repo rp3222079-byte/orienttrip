@@ -1,0 +1,1009 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Авторские туры Насти и Саши по Корее, Японии и Узбекистану. 4 года, 100+ туристов, маленькие группы. Программы по дням и даты — в Telegram-канале @orient_trip.">
+<meta property="og:title" content="Orient Trip — авторские туры по Азии">
+<meta property="og:description" content="Корея, Япония, Узбекистан. Маленькие группы, авторские маршруты, 4 года опыта. Даты в Telegram @orient_trip.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/uzbek-registan.jpg">
+<meta name="theme-color" content="#0F0B09">
+<title>Orient Trip — авторские туры в Корею, Японию и Узбекистан</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@300;400;500;600;700&display=swap">
+<style>
+:root{
+  --ink:#0F0B09;
+  --ink-2:#17110F;
+  --ink-3:#201815;
+  --text:#F3EBE1;
+  --muted:#A2937F;
+  --line:rgba(243,235,225,.13);
+  --line-strong:rgba(243,235,225,.28);
+  --gold:#C9A227;
+  --gold-soft:#E2C368;
+  --lapis:#4C82BE;
+  --celadon:#93B58C;
+  --lacquer:#D05540;
+  --accent:var(--gold);
+  --maxw:1160px;
+  --display:"Prata",Georgia,"Times New Roman",serif;
+  --body:"Manrope","Helvetica Neue",Arial,sans-serif;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--ink);
+  color:var(--text);
+  font-family:var(--body);
+  font-size:17px;
+  line-height:1.6;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding-inline:20px}
+
+.eyebrow{
+  font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--muted);font-weight:600;margin:0 0 18px;
+  display:flex;align-items:center;gap:12px;
+}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--accent);flex:none}
+
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
+h1{font-size:clamp(34px,6.4vw,62px);line-height:1.07;letter-spacing:-.01em}
+h2{font-size:clamp(27px,4.2vw,42px);line-height:1.15}
+h3{font-size:clamp(20px,2.6vw,25px);line-height:1.25}
+p{margin:0}
+
+.section{padding-block:clamp(56px,8vw,104px);border-top:1px solid var(--line)}
+.section-head{display:flex;flex-direction:column;gap:14px;max-width:660px;margin-bottom:clamp(30px,4vw,48px)}
+.lead{color:var(--muted);font-size:clamp(16px,2vw,18px);max-width:62ch}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--body);font-size:15px;font-weight:600;letter-spacing:.01em;
+  padding:15px 26px;border-radius:2px;text-decoration:none;border:1px solid transparent;
+  transition:background .18s ease,color .18s ease,border-color .18s ease,transform .18s ease;
+}
+.btn-primary{background:var(--gold);color:#17110F;border-color:var(--gold)}
+.btn-primary:hover{background:var(--gold-soft);border-color:var(--gold-soft)}
+.btn-ghost{border-color:var(--line-strong);color:var(--text)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-soft)}
+.btn:focus-visible{outline:2px solid var(--gold-soft);outline-offset:3px}
+.btn svg{width:17px;height:17px;flex:none}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px}
+
+/* ---------- header ---------- */
+.topbar{
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:40;
+  background:rgba(15,11,9,.82);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.topbar-in{display:flex;align-items:center;justify-content:space-between;gap:16px;height:62px}
+.brand{display:flex;align-items:baseline;gap:9px;text-decoration:none}
+.brand-mark{font-family:var(--display);font-size:20px;letter-spacing:.04em;white-space:nowrap}
+.brand-sub{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.topbar-links{display:flex;align-items:center;gap:22px}
+.tel{text-decoration:none;font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tel:hover{color:var(--gold-soft)}
+.topbar .btn{padding:10px 18px;font-size:14px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(760px 440px at 82% 18%,rgba(201,162,39,.10),transparent 68%);
+}
+.hero-in{
+  position:relative;z-index:1;
+  display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(28px,4vw,58px);align-items:center;
+  padding-block:clamp(44px,6vw,84px) clamp(48px,7vw,92px);
+}
+.hero-copy{display:flex;flex-direction:column;gap:26px}
+.hero h1 em{font-style:normal;color:var(--gold-soft)}
+.hero-lead{color:var(--muted);font-size:clamp(16px,1.9vw,19px);max-width:46ch}
+.hero-note{font-size:14px;color:var(--muted)}
+.hero-note b{color:var(--text);font-weight:600}
+
+.hero-figure{position:relative}
+.hero-figure img{
+  width:100%;height:clamp(340px,48vw,560px);object-fit:cover;
+  border:1px solid var(--line-strong);
+}
+.hero-cap{
+  position:absolute;left:0;bottom:-1px;
+  background:var(--ink);border:1px solid var(--line-strong);border-left:0;border-bottom:0;
+  padding:12px 18px 10px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+}
+
+/* ---------- stats ---------- */
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--ink-2)}
+.stats-in{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
+.stat{background:var(--ink-2);padding:26px 22px;display:flex;flex-direction:column;gap:6px}
+.stat-num{font-family:var(--display);font-size:clamp(30px,4vw,44px);line-height:1;color:var(--gold-soft);font-variant-numeric:tabular-nums}
+.stat-lab{font-size:13px;color:var(--muted);letter-spacing:.04em}
+
+/* ---------- directions ---------- */
+.dirs{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(18px,2.4vw,26px)}
+.dir{
+  --accent:var(--gold);
+  position:relative;display:flex;flex-direction:column;
+  background:var(--ink-2);border:1px solid var(--line);overflow:hidden;
+}
+.dir--kr{--accent:var(--celadon)}
+.dir--jp{--accent:var(--lacquer)}
+.dir--uz{--accent:var(--lapis)}
+.dir--cn{--accent:var(--gold)}
+.dir-img{position:relative;aspect-ratio:4/3;max-width:100%;overflow:hidden}
+.dir-img img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.3,1)}
+.dir:hover .dir-img img{transform:scale(1.045)}
+.dir-body{padding:24px 24px 28px;display:flex;flex-direction:column;gap:12px;flex:1}
+.dir-title{display:flex;align-items:baseline;gap:12px}
+.dir-title h3{color:var(--text)}
+.dir-flag{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.dir-text{color:var(--muted);font-size:15.5px}
+.dir-cities{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:6px}
+.city{
+  font-size:12.5px;letter-spacing:.06em;padding:5px 11px;
+  border:1px solid var(--line-strong);border-radius:999px;color:var(--text);
+}
+.dir--cn .dir-img{
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,#241a14 0%,#171110 55%,#2a1f15 100%);
+}
+.soon{font-family:var(--display);font-size:clamp(22px,3.4vw,32px);color:var(--gold);letter-spacing:.02em;text-align:center;padding:0 20px}
+
+/* ---------- difference ---------- */
+.diff{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,3vw,34px)}
+.panel{border:1px solid var(--line);padding:clamp(22px,3vw,34px);background:var(--ink-2)}
+.panel--muted{background:transparent}
+.panel h3{margin-bottom:18px}
+.panel--muted h3{color:var(--muted)}
+.panel ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:13px}
+.panel li{position:relative;padding-left:26px;font-size:15.5px;color:var(--text)}
+.panel--muted li{color:var(--muted)}
+.panel li::before{position:absolute;left:0;top:0;font-size:15px}
+.panel--good li::before{content:"✦";color:var(--gold)}
+.panel--muted li::before{content:"—";color:var(--muted)}
+
+/* ---------- steps ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.step{background:var(--ink);padding:28px 24px 32px;display:flex;flex-direction:column;gap:12px}
+.step-n{font-family:var(--display);font-size:15px;color:var(--gold);letter-spacing:.14em}
+.step h3{font-size:20px}
+.step p{color:var(--muted);font-size:15px}
+
+/* ---------- authors ---------- */
+.authors{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(26px,4vw,56px);align-items:center}
+.authors-img img{width:100%;height:clamp(300px,40vw,460px);object-fit:cover;border:1px solid var(--line-strong)}
+.authors-copy{display:flex;flex-direction:column;gap:20px}
+.sig{font-family:var(--display);font-size:22px;color:var(--gold-soft)}
+.quote{
+  border-left:2px solid var(--gold);padding:4px 0 4px 20px;
+  font-family:var(--display);font-size:clamp(18px,2.4vw,23px);line-height:1.4;
+}
+
+/* ---------- gallery ---------- */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gal figure{margin:0;position:relative;overflow:hidden;border:1px solid var(--line)}
+.gal img{width:100%;height:clamp(230px,26vw,340px);object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.3,1)}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:26px 16px 12px;
+  font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  background:linear-gradient(transparent,rgba(15,11,9,.85));
+}
+
+/* ---------- faq ---------- */
+.faq{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{
+  list-style:none;cursor:pointer;padding:22px 44px 22px 0;position:relative;
+  font-size:clamp(16.5px,2vw,19px);font-weight:600;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:8px;top:50%;transform:translateY(-50%);
+  font-size:24px;color:var(--gold);font-weight:400;line-height:1;
+}
+.faq details[open] summary::after{content:"–"}
+.faq summary:focus-visible{outline:2px solid var(--gold-soft);outline-offset:2px}
+.faq .answer{padding:0 44px 24px 0;color:var(--muted);font-size:16px}
+
+/* ---------- final cta ---------- */
+.cta{background:var(--ink-2);border-top:1px solid var(--line)}
+.cta-in{
+  padding-block:clamp(56px,8vw,96px);
+  display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px;
+}
+.cta h2{max-width:16ch}
+.cta .lead{text-align:center}
+.contacts{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 32px;margin-top:8px;font-size:15px;color:var(--muted)}
+.contacts a{text-decoration:none;color:var(--text);font-weight:600}
+.contacts a:hover{color:var(--gold-soft)}
+
+footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:var(--muted)}
+.foot-in{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center;justify-content:space-between}
+
+/* ---------- direction meta ---------- */
+.dir-meta{font-size:13px;color:var(--muted);letter-spacing:.03em;font-variant-numeric:tabular-nums}
+.dir-meta b{color:var(--text);font-weight:600}
+.dir-link{
+  font-size:14px;font-weight:600;color:var(--accent);text-decoration:none;
+  display:inline-flex;align-items:center;gap:6px;margin-top:4px;
+}
+.dir-link:hover{text-decoration:underline;text-underline-offset:4px}
+.dir-link:focus-visible{outline:2px solid var(--gold-soft);outline-offset:3px}
+
+/* ---------- programs ---------- */
+.prog-tabs{
+  display:flex;gap:0;border-bottom:1px solid var(--line);margin-bottom:clamp(26px,3.4vw,40px);
+  overflow-x:auto;scrollbar-width:none;
+}
+.prog-tabs::-webkit-scrollbar{display:none}
+.prog-tab{
+  --accent:var(--gold);
+  appearance:none;background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;
+  color:var(--muted);font-family:var(--display);font-size:clamp(18px,2.4vw,24px);
+  padding:12px clamp(14px,2.4vw,28px) 14px;cursor:pointer;white-space:nowrap;
+  transition:color .18s ease,border-color .18s ease;
+}
+.prog-tab:first-child{padding-left:0}
+.prog-tab[data-tab="jp"]{--accent:var(--lacquer)}
+.prog-tab[data-tab="kr"]{--accent:var(--celadon)}
+.prog-tab[data-tab="uz"]{--accent:var(--lapis)}
+.prog-tab:hover{color:var(--text)}
+.prog-tab[aria-selected="true"]{color:var(--text);border-bottom-color:var(--accent)}
+.prog-tab:focus-visible{outline:2px solid var(--gold-soft);outline-offset:-2px}
+
+.prog{--accent:var(--gold)}
+.prog--jp{--accent:var(--lacquer)}
+.prog--kr{--accent:var(--celadon)}
+.prog--uz{--accent:var(--lapis)}
+.prog-head{
+  display:grid;grid-template-columns:1fr auto;gap:18px 32px;align-items:end;
+  padding-bottom:clamp(22px,3vw,30px);
+}
+.prog-head h3{font-size:clamp(24px,3.4vw,34px)}
+.prog-route{color:var(--muted);margin-top:8px;font-size:15.5px;letter-spacing:.02em}
+.prog-facts{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+.fact{
+  font-size:13px;padding:7px 13px;border:1px solid var(--line-strong);border-radius:999px;
+  white-space:nowrap;font-variant-numeric:tabular-nums;
+}
+.fact--accent{border-color:var(--accent);color:var(--text)}
+
+.days{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.day{
+  display:grid;grid-template-columns:132px 1fr;gap:10px 28px;
+  padding-block:22px;border-bottom:1px solid var(--line);
+}
+.day-n{display:flex;flex-direction:column;gap:3px}
+.day-num{font-family:var(--display);font-size:22px;line-height:1.1;color:var(--accent);font-variant-numeric:tabular-nums}
+.day-place{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.day-body{display:flex;flex-direction:column;gap:10px;min-width:0}
+.day-body h4{margin:0;font-family:var(--body);font-weight:600;font-size:17px;line-height:1.4}
+.day-body ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+.day-body li{position:relative;padding-left:20px;color:var(--muted);font-size:15.5px}
+.day-body li::before{content:"";position:absolute;left:2px;top:.72em;width:6px;height:6px;border:1px solid var(--accent);transform:rotate(45deg)}
+.day-body li.opt{font-style:italic}
+.day--road .day-num{color:var(--muted)}
+.day--road h4{color:var(--muted);font-weight:500}
+.day--free{background:linear-gradient(90deg,rgba(201,162,39,.07),transparent 70%)}
+.day--free .day-num{color:var(--gold-soft)}
+.prog-foot{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;
+  margin-top:clamp(24px,3vw,34px);
+}
+.prog-foot p{color:var(--muted);font-size:15px;max-width:52ch}
+
+/* ---------- sticky mobile bar ---------- */
+.mobile-bar{display:none}
+
+@media (max-width:1000px){
+  .hero-in{grid-template-columns:1fr;padding-block:36px 48px}
+  .hero-figure{order:-1}
+  .hero-figure img{height:clamp(280px,62vw,420px)}
+  .authors{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .stats-in{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  .dirs{grid-template-columns:1fr}
+  .diff{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr 1fr}
+  .topbar .btn,.topbar .tel-label{display:none}
+  .topbar-links{gap:14px}
+  .mobile-bar{
+    display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:50;
+    padding:10px 14px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));
+    background:rgba(15,11,9,.94);backdrop-filter:blur(12px);border-top:1px solid var(--line);
+  }
+  .mobile-bar .btn{flex:1;padding:14px 12px;font-size:14px}
+  body{padding-bottom:78px}
+}
+@media (max-width:760px){
+  .prog-head{grid-template-columns:1fr}
+  .prog-facts{justify-content:flex-start}
+  .day{grid-template-columns:1fr;gap:10px;padding-block:18px}
+  .day-n{flex-direction:row;align-items:baseline;gap:12px}
+  .day--free{background:linear-gradient(180deg,rgba(201,162,39,.07),transparent 90%)}
+}
+@media (max-width:460px){
+  .brand-sub{display:none}
+  .steps{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:.01ms!important;animation-duration:.01ms!important}
+}
+</style>
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html,body{margin:0}[hidden]{display:none!important}</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#top">
+      <span class="brand-mark">Orient Trip</span>
+      <span class="brand-sub">Авторские туры</span>
+    </a>
+    <div class="topbar-links">
+      <a class="tel" href="tel:+79021641780">+7&nbsp;902&nbsp;164-17-80</a>
+      <a class="btn btn-primary" href="https://t.me/orient_trip" target="_blank" rel="noopener">Подписаться</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="eyebrow">Корея · Япония · Узбекистан</p>
+        <h1>Азия, которую не показывают<br><em>в пакетных турах</em></h1>
+        <p class="hero-lead">Мы&nbsp;— Настя и&nbsp;Саша. Четвёртый год водим маленькие авторские группы по&nbsp;Восточной и&nbsp;Центральной Азии: без беготни по&nbsp;чек-листу достопримечательностей, с&nbsp;живым языком, домашней едой и&nbsp;местами, куда сами возвращаемся.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://t.me/orient_trip" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 18.7 19c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 12.9l-4.8-1.5c-1-.3-1-1 .2-1.5l18.9-7.3c.9-.3 1.6.2 1.4 1.7z"/></svg>
+            Подписаться на канал
+          </a>
+          <a class="btn btn-ghost" href="https://t.me/Anastasiya_Kim" target="_blank" rel="noopener">Написать Анастасии</a>
+        </div>
+        <p class="hero-note"><b>4 года</b> в маршрутах · <b>100+</b> довольных туристов · маленькие группы</p>
+      </div>
+      <div class="hero-figure">
+        <img src="img/uzbek-registan.jpg" alt="Вид на Регистан в Самарканде через распахнутые деревянные двери" width="807" height="1280">
+        <p class="hero-cap">Самарканд · Регистан</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="wrap">
+      <div class="stats-in">
+        <div class="stat"><span class="stat-num">4</span><span class="stat-lab">года водим туры</span></div>
+        <div class="stat"><span class="stat-num">100+</span><span class="stat-lab">довольных туристов</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-lab">страны, четвёртая на подходе</span></div>
+        <div class="stat"><span class="stat-num">9</span><span class="stat-lab">городов в маршрутах</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="directions">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Направления</p>
+        <h2>Три страны, которые мы знаем не по путеводителю</h2>
+        <p class="lead">Каждый маршрут мы проехали сами — и не один раз. Даты ближайших групп, программы по дням и стоимость публикуем в Telegram-канале.</p>
+      </div>
+
+      <div class="dirs">
+
+        <article class="dir dir--kr">
+          <div class="dir-img">
+            <img src="img/korea-cathedral.jpg" alt="Интерьер собора в Сеуле с витражами" loading="lazy">
+          </div>
+          <div class="dir-body">
+            <div class="dir-title"><h3>Корея</h3><span class="dir-flag">Korea</span></div>
+            <p class="dir-meta"><b>9 дней / 8 ночей</b> · Пусан — Сеул</p>
+            <p class="dir-text">Храм на берегу моря, цветная деревня Камчхон и яхта по Восточному морю в Пусане. Потом Сеул: дворец Кёнбоккун в ханбоке, Букчон, DDP Захи Хадид, Мёндон и ночной Итхэвон.</p>
+            <a class="dir-link" href="#programs" data-open-prog="kr">Программа по дням →</a>
+            <div class="dir-cities">
+              <span class="city">Пусан</span><span class="city">Сеул</span><span class="city">Инчхон</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dir dir--jp">
+          <div class="dir-img">
+            <img src="img/japan-kyoto.jpg" alt="Улица в Киото с видом на пятиярусную пагоду Ясака" loading="lazy">
+          </div>
+          <div class="dir-body">
+            <div class="dir-title"><h3>Япония</h3><span class="dir-flag">Japan</span></div>
+            <p class="dir-meta"><b>11 дней / 10 ночей</b> · Токио — Фудзияма — Киото — Нара</p>
+            <p class="dir-text">Сибуя и teamLab в Токио, деревня у подножия Фудзи, бамбуковый лес Арашияма, квартал гейш и Фусими Инари в Киото, священные олени Нары и день в кимоно.</p>
+            <a class="dir-link" href="#programs" data-open-prog="jp">Программа по дням →</a>
+            <div class="dir-cities">
+              <span class="city">Токио</span><span class="city">Киото</span><span class="city">Осака</span><span class="city">Нара</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dir dir--uz">
+          <div class="dir-img">
+            <img src="img/uzbek-dresses.jpg" alt="Группа девушек в национальных узбекских платьях на фоне майолики" loading="lazy">
+          </div>
+          <div class="dir-body">
+            <div class="dir-title"><h3>Узбекистан</h3><span class="dir-flag">Uzbekistan</span></div>
+            <p class="dir-meta"><b>8 дней / 7 ночей</b> · Ташкент — Бухара — Самарканд</p>
+            <p class="dir-text">Чимганские горы и озеро Чарвак, старая Бухара, Регистан и Шахи-Зинда в Самарканде, мастер-классы по плову, лепёшкам и самсе и фотосессия в национальных халатах.</p>
+            <a class="dir-link" href="#programs" data-open-prog="uz">Программа по дням →</a>
+            <div class="dir-cities">
+              <span class="city">Ташкент</span><span class="city">Самарканд</span><span class="city">Бухара</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dir dir--cn">
+          <div class="dir-img"><p class="soon">Скоро — Китай</p></div>
+          <div class="dir-body">
+            <div class="dir-title"><h3>Китай</h3><span class="dir-flag">Soon</span></div>
+            <p class="dir-text">Готовим новое направление: маршрут уже собираем и ездим на разведку. Кто в канале — узнает о первом наборе раньше всех и поедет по цене первой группы.</p>
+            <div class="dir-cities">
+              <a class="btn btn-ghost" href="https://t.me/orient_trip" target="_blank" rel="noopener" style="margin-top:6px">Узнать первым</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="programs">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Программы туров</p>
+        <h2>Маршрут по дням</h2>
+        <p class="lead">Так выглядит поездка изнутри: что смотрим, где едим и сколько времени остаётся на себя. Ближайшие даты публикуем в канале.</p>
+      </div>
+
+      <div class="prog-tabs" role="tablist" aria-label="Программы туров">
+        <button class="prog-tab" id="tab-jp" role="tab" data-tab="jp" aria-selected="true" aria-controls="prog-jp">Япония</button>
+        <button class="prog-tab" id="tab-kr" role="tab" data-tab="kr" aria-selected="false" aria-controls="prog-kr" tabindex="-1">Корея</button>
+        <button class="prog-tab" id="tab-uz" role="tab" data-tab="uz" aria-selected="false" aria-controls="prog-uz" tabindex="-1">Узбекистан</button>
+      </div>
+
+      <!-- ЯПОНИЯ -->
+      <div class="prog prog--jp" id="prog-jp" role="tabpanel" aria-labelledby="tab-jp">
+        <div class="prog-head">
+          <div>
+            <h3>Япония: Токио, Фудзияма, Киото, Нара</h3>
+            <p class="prog-route">Токио → Фудзияма → Киото → Нара → Токио</p>
+          </div>
+          <div class="prog-facts">
+            <span class="fact fact--accent">11 дней / 10 ночей</span>
+            <span class="fact">Выезд из Улан-Удэ через Улан-Батор</span>
+          </div>
+        </div>
+        <ol class="days">
+          <li class="day day--road">
+            <div class="day-n"><span class="day-num">День 1</span><span class="day-place">В пути</span></div>
+            <div class="day-body"><h4>Выезд из Улан-Удэ в Улан-Батор</h4></div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 2</span><span class="day-place">Токио</span></div>
+            <div class="day-body">
+              <h4>Первый день в Токио</h4>
+              <ul>
+                <li>Перекрёсток Сибуя — один из самых оживлённых перекрёстков мира</li>
+                <li>Памятник Хатико</li>
+                <li>Музей цифрового искусства teamLab на острове Одайба</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 3</span><span class="day-place">Фудзияма</span></div>
+            <div class="day-body">
+              <h4>Поездка к горе Фудзи</h4>
+              <ul>
+                <li>Традиционная японская деревня у подножия</li>
+                <li>Древнее синтоистское святилище, посвящённое богине горы Фудзи</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 4</span><span class="day-place">Киото</span></div>
+            <div class="day-body">
+              <h4>Переезд в Киото</h4>
+              <ul>
+                <li>Музей самураев и ниндзя</li>
+                <li>Дегустация саке и устриц</li>
+                <li>Прогулка по вечернему Киото</li>
+                <li class="opt">Ночной клуб — по желанию</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 5</span><span class="day-place">Арашияма</span></div>
+            <div class="day-body">
+              <h4>Бамбуковый лес Арашияма</h4>
+              <ul>
+                <li>Сад храма Тэнрю-дзи и мост Тогэцукё</li>
+                <li>Катание на лодке по реке Кацура</li>
+                <li>Буддийский храм с лесом каменных статуй</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 6</span><span class="day-place">Киото</span></div>
+            <div class="day-body">
+              <h4>Старый Киото</h4>
+              <ul>
+                <li>Прогулка по району гейш и чайных домиков</li>
+                <li>Японский театр танца нихон-буё</li>
+                <li>Древняя пятиярусная пагода Ясака</li>
+                <li>Святилище Фусими Инари с тысячей красных ворот</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 7</span><span class="day-place">Нара</span></div>
+            <div class="day-body">
+              <h4>Поездка в Нару</h4>
+              <ul>
+                <li>Парк со священными оленями</li>
+                <li>Ворота Нандаймон и храм Тодайдзи</li>
+                <li>Шопинг</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day day--free">
+            <div class="day-n"><span class="day-num">День 8</span><span class="day-place">Киото</span></div>
+            <div class="day-body">
+              <h4>Свободный день</h4>
+              <ul>
+                <li class="opt">Фотосессия в кимоно и чайная церемония — по желанию</li>
+                <li>Шопинг</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 9</span><span class="day-place">Токио</span></div>
+            <div class="day-body">
+              <h4>Синкансэн в Токио и вылет</h4>
+              <ul>
+                <li>Переезд в Токио на скоростном поезде</li>
+                <li>Вылет в Улан-Батор</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day day--road">
+            <div class="day-n"><span class="day-num">День 10</span><span class="day-place">Домой</span></div>
+            <div class="day-body"><h4>Из Улан-Батора в Улан-Удэ</h4></div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- КОРЕЯ -->
+      <div class="prog prog--kr" id="prog-kr" role="tabpanel" aria-labelledby="tab-kr" hidden>
+        <div class="prog-head">
+          <div>
+            <h3>Южная Корея: Пусан и Сеул</h3>
+            <p class="prog-route">Пусан → Сеул</p>
+          </div>
+          <div class="prog-facts">
+            <span class="fact fact--accent">9 дней / 8 ночей</span>
+            <span class="fact">Выезд из Улан-Удэ через Улан-Батор</span>
+          </div>
+        </div>
+        <ol class="days">
+          <li class="day day--road">
+            <div class="day-n"><span class="day-num">День 1</span><span class="day-place">В пути</span></div>
+            <div class="day-body"><h4>Трансфер Улан-Удэ — Улан-Батор</h4></div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 2</span><span class="day-place">Пусан</span></div>
+            <div class="day-body">
+              <h4>Прилёт в Пусан</h4>
+              <ul>
+                <li>Ужин: корейское барбекю</li>
+                <li>Свободное время</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 3</span><span class="day-place">Пусан</span></div>
+            <div class="day-body">
+              <h4>Пусан у моря</h4>
+              <ul>
+                <li>Бамбуковый лес семьи Мун — место съёмок корейских дорам</li>
+                <li>Обед в знаменитом этнокафе Пусана</li>
+                <li>Храм Хэдон Ёнгунса на берегу моря</li>
+                <li>Ужин: корейская пряная курочка на берегу моря</li>
+                <li class="opt">Для фанатов BTS — кафе ZM-illenial</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 4</span><span class="day-place">Пусан</span></div>
+            <div class="day-body">
+              <h4>Цветной Пусан</h4>
+              <ul>
+                <li>Завтрак с видом на цветные трамвайчики</li>
+                <li>Культурная деревня Камчхон</li>
+                <li>Прогулка по тропе — 600 метров</li>
+                <li>Прогулка на яхте по Восточному морю</li>
+                <li>Корейская сауна: 18 термальных бассейнов и сауны народов мира</li>
+                <li>Шопинг</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 5</span><span class="day-place">Сеул</span></div>
+            <div class="day-body">
+              <h4>Скоростной поезд в Сеул</h4>
+              <ul>
+                <li>Тондэмун Дизайн Плаза (DDP) — футуристическое здание архитектора Захи Хадид</li>
+                <li>Оптовый рынок косметики и корейской одежды</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 6</span><span class="day-place">Сеул</span></div>
+            <div class="day-body">
+              <h4>Королевский Сеул</h4>
+              <ul>
+                <li>Площадь Кванхвамун с памятниками полководцу Ли Сун Сину и королю-реформатору Седжону Великому</li>
+                <li>Дворцовый музей династии Чосон и дворец Кёнбоккун</li>
+                <li>Фотосессия в национальных костюмах ханбок</li>
+                <li>Обед в старинном этнокафе в стиле ханок</li>
+                <li>Фотосессия в корейской фотокабинке</li>
+                <li>Прогулка до деревни Букчон и по городскому ручью Чхонгечхон</li>
+                <li>Вечером — район Итхэвон: ночной клуб и уличный рамен</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day day--free">
+            <div class="day-n"><span class="day-num">День 7</span><span class="day-place">Сеул</span></div>
+            <div class="day-body"><h4>Свободный день</h4></div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 8</span><span class="day-place">Сеул</span></div>
+            <div class="day-body">
+              <h4>Сеул с высоты</h4>
+              <ul>
+                <li>Водопад Покпо</li>
+                <li>Поездка на гору Намсан</li>
+                <li>Католический собор Мёндон</li>
+                <li>Улица Мёндон и шопинг</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day day--road">
+            <div class="day-n"><span class="day-num">День 9</span><span class="day-place">Домой</span></div>
+            <div class="day-body"><h4>Вылет в Улан-Батор, переход границы и дорога до Улан-Удэ</h4></div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- УЗБЕКИСТАН -->
+      <div class="prog prog--uz" id="prog-uz" role="tabpanel" aria-labelledby="tab-uz" hidden>
+        <div class="prog-head">
+          <div>
+            <h3>Узбекистан: Ташкент, Бухара, Самарканд</h3>
+            <p class="prog-route">Ташкент → Чимган → Бухара → Самарканд → Ташкент</p>
+          </div>
+          <div class="prog-facts">
+            <span class="fact fact--accent">8 дней / 7 ночей</span>
+            <span class="fact">Вылет из Иркутска</span>
+          </div>
+        </div>
+        <ol class="days">
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 1</span><span class="day-place">Ташкент</span></div>
+            <div class="day-body">
+              <h4>Прилёт в Ташкент</h4>
+              <ul>
+                <li>Встреча группы в аэропорту Иркутска</li>
+                <li>Прилёт в Ташкент и заселение в отель</li>
+                <li>Приветственный ужин</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 2</span><span class="day-place">Горы</span></div>
+            <div class="day-body">
+              <h4>Чимганские горы</h4>
+              <ul>
+                <li>Горный курорт Амирсой</li>
+                <li>Озеро Чарвак с видом на Тянь-Шань</li>
+                <li>Катание на катере</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 3</span><span class="day-place">Бухара</span></div>
+            <div class="day-body">
+              <h4>Древняя Бухара</h4>
+              <ul>
+                <li>Ансамбль Ляби-Хауз: ханака и медресе Надир-диван-беги, медресе Кукельдаш, водоём Надир-диван-беги</li>
+                <li>Торговые купола и караван-сараи</li>
+                <li>Комплекс Пои-Калян: медресе Мири-Араб, минарет Арслан-хана и мечеть Калян</li>
+                <li>Крепость Арк</li>
+                <li>Мечеть Абулфайз-хана и водоём Субханкули-хана</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 4</span><span class="day-place">Самарканд</span></div>
+            <div class="day-body">
+              <h4>Переезд в Самарканд</h4>
+              <ul>
+                <li>Фабрика шёлка и ковров «Худжум»</li>
+                <li>Некрополь Шахи-Зинда</li>
+                <li>Мавзолей Тамерлана Гур-Эмир</li>
+                <li>Сиабский базар и шопинг</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 5</span><span class="day-place">Самарканд</span></div>
+            <div class="day-body">
+              <h4>Регистан и Зарафшанские горы</h4>
+              <ul>
+                <li>Мечеть Биби-Ханым</li>
+                <li>Пещера святого Давида</li>
+                <li>Катание на осликах или лошадях в Зарафшанских горах</li>
+                <li>Площадь Регистан</li>
+                <li>Фотосессия в традиционных халатах</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 6</span><span class="day-place">Самарканд</span></div>
+            <div class="day-body">
+              <h4>Узбекское гостеприимство</h4>
+              <ul>
+                <li>Махалля — дом Ислама Каримова</li>
+                <li>Национальная шоу-программа: танцы, обычаи и традиции узбекского народа</li>
+                <li>Мастер-классы по плову, лепёшкам и самсе</li>
+                <li>Экскурсия по семейной винодельне</li>
+                <li class="opt">Дегустация вин — по желанию</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day">
+            <div class="day-n"><span class="day-num">День 7</span><span class="day-place">Ташкент</span></div>
+            <div class="day-body">
+              <h4>Возвращение в Ташкент</h4>
+              <ul>
+                <li>Набережная Ташкента и поющие фонтаны</li>
+                <li>Обед на набережной</li>
+                <li>Свободное время: шопинг, бассейн и хамам в отеле</li>
+              </ul>
+            </div>
+          </li>
+          <li class="day day--road">
+            <div class="day-n"><span class="day-num">День 8</span><span class="day-place">Домой</span></div>
+            <div class="day-body"><h4>Вылет в Иркутск</h4></div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="prog-foot">
+        <p>Даты ближайших групп, стоимость и что входит в тур — в Telegram-канале. Там же отвечаем на вопросы по программе.</p>
+        <a class="btn btn-primary" href="https://t.me/orient_trip" target="_blank" rel="noopener">Узнать даты в канале</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Чем мы отличаемся</p>
+        <h2>Авторский тур ≠ автобус на сорок человек</h2>
+      </div>
+      <div class="diff">
+        <div class="panel panel--good">
+          <h3>Как у нас</h3>
+          <ul>
+            <li>Маленькая группа — все успевают, никто никого не ждёт</li>
+            <li>Ведём лично: мы рядом весь маршрут, а не встречаем в аэропорту</li>
+            <li>Говорим на языке страны и решаем вопросы на месте</li>
+            <li>Едим там, где едят местные, а не в ресторанах для автобусов</li>
+            <li>В программе есть воздух: свободные часы и места «для себя»</li>
+            <li>Помогаем с визой, симкой, транспортом и первым днём</li>
+          </ul>
+        </div>
+        <div class="panel panel--muted">
+          <h3>Как в пакетном туре</h3>
+          <ul>
+            <li>40 человек, перекличка и вечное «ждём опоздавших»</li>
+            <li>Гид меняется в каждом городе, никто не помнит вашего имени</li>
+            <li>Наушник, десять минут на объект, автобус уезжает</li>
+            <li>Обед по расписанию в месте, куда возят всех</li>
+            <li>Программа забита так, что вечером нет сил</li>
+            <li>Всё, что вне маршрута, — ваша проблема</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Как это устроено</p>
+        <h2>От первого сообщения до посадки в самолёт</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="step-n">01</span>
+          <h3>Выбираете набор</h3>
+          <p>Даты, программу по дням и стоимость публикуем в канале. Читаете, задаёте вопросы — без звонков и давления.</p>
+        </div>
+        <div class="step">
+          <span class="step-n">02</span>
+          <h3>Бронируете место</h3>
+          <p>Группы небольшие, места разбирают заранее. Закрепляем за вами место предоплатой и присылаем памятку.</p>
+        </div>
+        <div class="step">
+          <span class="step-n">03</span>
+          <h3>Готовимся вместе</h3>
+          <p>Помогаем с документами, билетами и сборами. Собираем чат группы, чтобы вы прилетели уже к своим.</p>
+        </div>
+        <div class="step">
+          <span class="step-n">04</span>
+          <h3>Едем</h3>
+          <p>Дальше наша работа: маршрут, транспорт, еда, язык. Ваша — смотреть по сторонам и фотографировать.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="authors">
+        <div class="authors-img">
+          <img src="img/japan-rakan.jpg" alt="Настя и Саша среди каменных статуй ракан в Киото" loading="lazy">
+        </div>
+        <div class="authors-copy">
+          <p class="eyebrow">Кто ведёт</p>
+          <h2>Настя и Саша</h2>
+          <p class="lead">Четвёртый год мы возим группы по Азии — и всё ещё сами ждём каждой поездки. Начинали с того, что показывали Корею друзьям; сейчас за плечами больше сотни туристов, которые возвращаются к нам уже в другую страну.</p>
+          <p class="quote">«Хороший тур — это когда через год вы помните не список храмов, а конкретное утро, конкретный вкус и людей, с которыми ехали».</p>
+          <p class="lead">Мы не перепродаём чужие программы. Каждый маршрут собран нами вручную, проверен ногами и переписан после каждой группы.</p>
+          <p class="sig">— Настя &amp; Саша</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Наши группы</p>
+        <h2>Как это выглядит изнутри</h2>
+        <p class="lead">Ни одной стоковой фотографии — всё снято в наших турах.</p>
+      </div>
+      <div class="gal">
+        <figure>
+          <img src="img/japan-kimono.jpg" alt="Группа в кимоно с бумажными зонтами во дворе традиционного дома" loading="lazy">
+          <figcaption>Киото · день в кимоно</figcaption>
+        </figure>
+        <figure>
+          <img src="img/korea-group.jpg" alt="Большая группа туристов у водопада в Корее" loading="lazy">
+          <figcaption>Корея · вся группа</figcaption>
+        </figure>
+        <figure>
+          <img src="img/uzbek-dresses.jpg" alt="Девушки в узбекских национальных платьях" loading="lazy">
+          <figcaption>Самарканд · фотодень</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Вопросы</p>
+        <h2>О чём спрашивают чаще всего</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>Сколько стоит тур и когда ближайшие даты?</summary>
+          <p class="answer">Стоимость и даты каждого набора публикуем в Telegram-канале — там же полная программа по дням и что входит в цену. Подпишитесь на <a href="https://t.me/orient_trip" target="_blank" rel="noopener">t.me/orient_trip</a>, чтобы не пропустить открытие набора, или напишите Анастасии — расскажем по вашему направлению.</p>
+        </details>
+        <details>
+          <summary>Какого размера группы?</summary>
+          <p class="answer">Небольшие. Нам важно, чтобы мы успевали поговорить с каждым, а группа проходила там, где большой автобус просто не пройдёт.</p>
+        </details>
+        <details>
+          <summary>Нужно ли знать язык?</summary>
+          <p class="answer">Нет. Мы говорим за вас — от заказа еды до разговора с врачом, если вдруг понадобится. Многие едут с нами именно поэтому.</p>
+        </details>
+        <details>
+          <summary>Я еду один / одна. Это нормально?</summary>
+          <p class="answer">Абсолютно. Больше половины наших туристов приезжают поодиночке и к концу маршрута уезжают с новыми друзьями. Подселение подбираем заранее.</p>
+        </details>
+        <details>
+          <summary>Помогаете с визой и билетами?</summary>
+          <p class="answer">Да. Подсказываем, какие документы нужны, как подаваться и на какие рейсы смотреть, чтобы удобно состыковаться с группой.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contacts">
+    <div class="wrap cta-in">
+      <p class="eyebrow" style="justify-content:center">Ближайший набор</p>
+      <h2>Места в группах разбирают до того, как выходит реклама</h2>
+      <p class="lead">Все даты, программы и стоимость — в Telegram-канале. Подпишитесь: там же фотоотчёты из поездок и анонсы новых направлений.</p>
+      <div class="btn-row" style="justify-content:center">
+        <a class="btn btn-primary" href="https://t.me/orient_trip" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 18.7 19c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 12.9l-4.8-1.5c-1-.3-1-1 .2-1.5l18.9-7.3c.9-.3 1.6.2 1.4 1.7z"/></svg>
+          Подписаться на @orient_trip
+        </a>
+        <a class="btn btn-ghost" href="https://t.me/Anastasiya_Kim" target="_blank" rel="noopener">Задать вопрос в личку</a>
+      </div>
+      <div class="contacts">
+        <span>Телефон и WhatsApp: <a href="tel:+79021641780">+7 902 164-17-80</a></span>
+        <span>Telegram: <a href="https://t.me/Anastasiya_Kim" target="_blank" rel="noopener">@Anastasiya_Kim</a></span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <span>Orient Trip — авторские туры по Азии · Настя и Саша</span>
+    <span><a href="https://t.me/orient_trip" target="_blank" rel="noopener" style="color:var(--text);text-decoration:none">t.me/orient_trip</a></span>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="btn btn-primary" href="https://t.me/orient_trip" target="_blank" rel="noopener">Подписаться</a>
+  <a class="btn btn-ghost" href="tel:+79021641780">Позвонить</a>
+</div>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.prog-tab'));
+  function show(id,focus){
+    tabs.forEach(function(t){
+      var on=t.getAttribute('data-tab')===id;
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex=on?0:-1;
+      var panel=document.getElementById('prog-'+t.getAttribute('data-tab'));
+      if(panel) panel.hidden=!on;
+      if(on&&focus) t.focus();
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.getAttribute('data-tab'))});
+    t.addEventListener('keydown',function(e){
+      if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft')return;
+      e.preventDefault();
+      var n=tabs[(i+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length];
+      show(n.getAttribute('data-tab'),true);
+    });
+  });
+  [].forEach.call(document.querySelectorAll('[data-open-prog]'),function(a){
+    a.addEventListener('click',function(){show(a.getAttribute('data-open-prog'))});
+  });
+})();
+</script>
+</body>
+</html>
