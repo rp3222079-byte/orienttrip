@@ -10,9 +10,6 @@
 <meta property="og:image" content="img/uzbek-registan.jpg">
 <meta name="theme-color" content="#0F0B09">
 <title>Orient Trip — авторские туры в Корею, Японию и Узбекистан</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@300;400;500;600;700&display=swap">
 <style>
 :root{
   --ink:#0F0B09;
@@ -29,8 +26,8 @@
   --lacquer:#D05540;
   --accent:var(--gold);
   --maxw:1160px;
-  --display:"Prata",Georgia,"Times New Roman",serif;
-  --body:"Manrope","Helvetica Neue",Arial,sans-serif;
+  --display:"Times New Roman",Times,serif;
+  --body:"Times New Roman",Times,serif;
   color-scheme:dark;
 }
 
@@ -233,6 +230,10 @@ p{margin:0}
 .contacts a:hover{color:var(--gold-soft)}
 
 footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:var(--muted)}
+.photo-credits{margin-top:14px}
+.photo-credits summary{cursor:pointer}
+.photo-credits ul{margin:10px 0 0;padding-left:18px;columns:2 260px;column-gap:32px}
+.photo-credits a{color:var(--text)}
 .foot-in{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center;justify-content:space-between}
 
 /* ---------- direction meta ---------- */
@@ -301,6 +302,9 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
 .day--road h4{color:var(--muted);font-weight:500}
 .day--free{background:linear-gradient(90deg,rgba(201,162,39,.07),transparent 70%)}
 .day--free .day-num{color:var(--gold-soft)}
+.day:has(.day-photo){grid-template-columns:132px 1fr minmax(220px,300px)}
+.day-photo{margin:0;align-self:start}
+.day-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--line)}
 .prog-foot{
   display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;
   margin-top:clamp(24px,3vw,34px);
@@ -317,6 +321,8 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
   .authors{grid-template-columns:1fr}
   .steps{grid-template-columns:repeat(2,1fr)}
   .stats-in{grid-template-columns:repeat(2,1fr)}
+  .day:has(.day-photo){grid-template-columns:132px 1fr}
+  .day-photo{grid-column:2;max-width:420px}
 }
 @media (max-width:760px){
   body{font-size:16px}
@@ -336,8 +342,10 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
 @media (max-width:760px){
   .prog-head{grid-template-columns:1fr}
   .prog-facts{justify-content:flex-start}
-  .day{grid-template-columns:1fr;gap:10px;padding-block:18px}
+  .day,.day:has(.day-photo){grid-template-columns:1fr;gap:10px;padding-block:18px}
   .day-n{flex-direction:row;align-items:baseline;gap:12px}
+  .day-photo{grid-column:auto;max-width:none;margin-top:4px}
+  .day-photo img{aspect-ratio:16/10}
   .day--free{background:linear-gradient(180deg,rgba(201,162,39,.07),transparent 90%)}
 }
 @media (max-width:460px){
@@ -511,6 +519,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li>Музей цифрового искусства teamLab на острове Одайба</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/jp-shibuya.jpg" alt="Толпа пешеходов на перекрёстке Сибуя в Токио" width="960" height="595" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day">
             <div class="day-n"><span class="day-num">День 3</span><span class="day-place">Фудзияма</span></div>
@@ -521,6 +530,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li>Древнее синтоистское святилище, посвящённое богине горы Фудзи</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/jp-fuji.jpg" alt="Пагода Тюрэйто на фоне горы Фудзи" width="960" height="540" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day">
             <div class="day-n"><span class="day-num">День 4</span><span class="day-place">Киото</span></div>
@@ -533,6 +543,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li class="opt">Ночной клуб — по желанию</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/jp-pontocho.jpg" alt="Вечерний переулок Понтотё в Киото с бумажными фонарями" width="960" height="932" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day">
             <div class="day-n"><span class="day-num">День 5</span><span class="day-place">Арашияма</span></div>
@@ -544,6 +555,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li>Буддийский храм с лесом каменных статуй</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/jp-arashiyama.jpg" alt="Тропинка через бамбуковый лес Арашияма" width="960" height="640" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day">
             <div class="day-n"><span class="day-num">День 6</span><span class="day-place">Киото</span></div>
@@ -556,6 +568,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li>Святилище Фусими Инари с тысячей красных ворот</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/jp-inari.jpg" alt="Коридор красных ворот тории в святилище Фусими Инари" width="960" height="640" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day">
             <div class="day-n"><span class="day-num">День 7</span><span class="day-place">Нара</span></div>
@@ -567,6 +580,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li>Шопинг</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/jp-nara.jpg" alt="Священные олени у храма Тодайдзи в Наре" width="960" height="720" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day day--free">
             <div class="day-n"><span class="day-num">День 8</span><span class="day-place">Киото</span></div>
@@ -577,6 +591,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li>Шопинг</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/japan-kimono.jpg" alt="Группа в кимоно с бумажными зонтами во дворе традиционного дома" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day">
             <div class="day-n"><span class="day-num">День 9</span><span class="day-place">Токио</span></div>
@@ -587,6 +602,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li>Вылет в Улан-Батор</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/jp-shinkansen.jpg" alt="Скоростной поезд синкансэн N700S у моря" width="960" height="641" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day day--road">
             <div class="day-n"><span class="day-num">День 10</span><span class="day-place">Домой</span></div>
@@ -621,6 +637,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li>Свободное время</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/kr-bbq.jpg" alt="Корейское барбекю: самгёпсаль и кимчи на гриле" width="960" height="720" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day">
             <div class="day-n"><span class="day-num">День 3</span><span class="day-place">Пусан</span></div>
@@ -634,6 +651,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li class="opt">Для фанатов BTS — кафе ZM-illenial</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/kr-yonggungsa.jpg" alt="Храм Хэдон Ёнгунса на скалах у моря" width="960" height="540" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day">
             <div class="day-n"><span class="day-num">День 4</span><span class="day-place">Пусан</span></div>
@@ -648,6 +666,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li>Шопинг</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/kr-gamcheon.jpg" alt="Разноцветные дома деревни Камчхон на склоне холма" width="960" height="600" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day">
             <div class="day-n"><span class="day-num">День 5</span><span class="day-place">Сеул</span></div>
@@ -658,6 +677,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li>Оптовый рынок косметики и корейской одежды</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/kr-ddp.jpg" alt="Футуристический фасад Тондэмун Дизайн Плаза вечером" width="960" height="640" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day">
             <div class="day-n"><span class="day-num">День 6</span><span class="day-place">Сеул</span></div>
@@ -673,6 +693,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li>Вечером — район Итхэвон: ночной клуб и уличный рамен</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/kr-gyeongbokgung.jpg" alt="Тронный зал Кынджонджон во дворце Кёнбоккун" width="960" height="640" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day day--free">
             <div class="day-n"><span class="day-num">День 7</span><span class="day-place">Сеул</span></div>
@@ -689,6 +710,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li>Улица Мёндон и шопинг</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/kr-namsan.jpg" alt="Ночной Сеул с горы Намсан" width="960" height="522" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day day--road">
             <div class="day-n"><span class="day-num">День 9</span><span class="day-place">Домой</span></div>
@@ -731,6 +753,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li>Катание на катере</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/uz-charvak.jpg" alt="Бирюзовое озеро Чарвак среди Чимганских гор" width="960" height="608" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day">
             <div class="day-n"><span class="day-num">День 3</span><span class="day-place">Бухара</span></div>
@@ -744,6 +767,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li>Мечеть Абулфайз-хана и водоём Субханкули-хана</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/uz-bukhara.jpg" alt="Минарет Калян и мечеть комплекса Пои-Калян в Бухаре" width="960" height="637" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day">
             <div class="day-n"><span class="day-num">День 4</span><span class="day-place">Самарканд</span></div>
@@ -756,6 +780,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li>Сиабский базар и шопинг</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/uz-shahizinda.jpg" alt="Мавзолеи с голубыми куполами в некрополе Шахи-Зинда" width="960" height="621" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day">
             <div class="day-n"><span class="day-num">День 5</span><span class="day-place">Самарканд</span></div>
@@ -769,6 +794,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li>Фотосессия в традиционных халатах</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/uz-registan.jpg" alt="Площадь Регистан в Самарканде в вечерней подсветке" width="960" height="570" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day">
             <div class="day-n"><span class="day-num">День 6</span><span class="day-place">Самарканд</span></div>
@@ -782,6 +808,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li class="opt">Дегустация вин — по желанию</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/uz-plov.jpg" alt="Плов готовят в огромном казане" width="960" height="640" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day">
             <div class="day-n"><span class="day-num">День 7</span><span class="day-place">Ташкент</span></div>
@@ -793,6 +820,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
                 <li>Свободное время: шопинг, бассейн и хамам в отеле</li>
               </ul>
             </div>
+            <figure class="day-photo"><img src="img/days/uz-tashkent.jpg" alt="Белая мечеть Минор на набережной в Ташкенте" width="960" height="651" loading="lazy" decoding="async"></figure>
           </li>
           <li class="day day--road">
             <div class="day-n"><span class="day-num">День 8</span><span class="day-place">Домой</span></div>
@@ -971,6 +999,30 @@ footer{border-top:1px solid var(--line);padding-block:26px;font-size:13px;color:
     <span>Orient Trip — авторские туры по Азии · Настя и Саша</span>
     <span><a href="https://t.me/orient_trip" target="_blank" rel="noopener" style="color:var(--text);text-decoration:none">t.me/orient_trip</a></span>
   </div>
+  <details class="wrap photo-credits">
+    <summary>Фото в программах туров — Wikimedia Commons</summary>
+    <ul>
+        <li>Сибуя — <a href="https://commons.wikimedia.org/wiki/File:Shibuya_scramble_crossing_during_Halloween_2023,_actually_less_crowded_than_usual,_high_police_presence_2.jpg" target="_blank" rel="noopener">Syced</a>, CC0</li>
+        <li>Фудзи — <a href="https://commons.wikimedia.org/wiki/File:12-Chureito-pagoda-and-Mount-Fuji-Japan_(29677439878).jpg" target="_blank" rel="noopener">Dang Son</a>, CC0</li>
+        <li>Понтотё — <a href="https://commons.wikimedia.org/wiki/File:Pontocho_Alley_at_night,_Kyoto_(53614869876).jpg" target="_blank" rel="noopener">Sergiy Galyonkin from Raleigh, USA</a>, CC BY-SA 2.0</li>
+        <li>Арашияма — <a href="https://commons.wikimedia.org/wiki/File:Arashiyama-Bamboo-Grove-Sunset.jpg" target="_blank" rel="noopener">Bjørn Christian Tørrissen</a>, CC BY-SA 4.0</li>
+        <li>Фусими Инари — <a href="https://commons.wikimedia.org/wiki/File:Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg" target="_blank" rel="noopener">Basile Morin</a>, CC BY-SA 4.0</li>
+        <li>Нара — <a href="https://commons.wikimedia.org/wiki/File:Deer_at_Todaiji_(5).jpg" target="_blank" rel="noopener">Immanuel Giel</a>, CC0</li>
+        <li>Синкансэн — <a href="https://commons.wikimedia.org/wiki/File:Series-N700S-J2.jpg" target="_blank" rel="noopener">MaedaAkihiko</a>, CC BY-SA 4.0</li>
+        <li>Корейское барбекю — <a href="https://commons.wikimedia.org/wiki/File:Korean_Barbecue-Samgyeopsal-01.jpg" target="_blank" rel="noopener">moso</a>, CC BY 2.0</li>
+        <li>Хэдон Ёнгунса — <a href="https://commons.wikimedia.org/wiki/File:Haedong_Yonggungsa_Temple,_Busan,_South_Korea.jpg" target="_blank" rel="noopener">Anna L Martin</a>, CC BY 2.0</li>
+        <li>Камчхон — <a href="https://commons.wikimedia.org/wiki/File:Colorful_houses_in_Gamcheon_Culture_Village_at_sunset_in_Busan_South_Korea.jpg" target="_blank" rel="noopener">Basile Morin</a>, CC BY-SA 4.0</li>
+        <li>DDP — <a href="https://commons.wikimedia.org/wiki/File:Dongdaemun_Design_Plaza_-_DDP2369.jpg" target="_blank" rel="noopener">lumoplank</a>, CC0</li>
+        <li>Кёнбоккун — <a href="https://commons.wikimedia.org/wiki/File:Gyeongbokgung(palace)_Geunjeongjeon(hall).jpg" target="_blank" rel="noopener">Brady Bellini</a>, CC0</li>
+        <li>Намсан — <a href="https://commons.wikimedia.org/wiki/File:N_Seoul_Tower_view_2.jpg" target="_blank" rel="noopener">kallerna</a>, CC BY-SA 4.0</li>
+        <li>Чарвак — <a href="https://commons.wikimedia.org/wiki/File:Embalse_de_Charvak_1.jpg" target="_blank" rel="noopener">LBM1948</a>, CC BY-SA 4.0</li>
+        <li>Бухара — <a href="https://commons.wikimedia.org/wiki/File:Po-i-Kalyan_in_Bukhara.jpg" target="_blank" rel="noopener">Maksimsokolov</a>, CC BY-SA 4.0</li>
+        <li>Шахи-Зинда — <a href="https://commons.wikimedia.org/wiki/File:Shah-i-Zinda_05.jpg" target="_blank" rel="noopener">Bgag</a>, CC0</li>
+        <li>Регистан — <a href="https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%D0%BD%D0%B4._%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C-%D0%A0%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D0%B0%D0%BD.jpg" target="_blank" rel="noopener">Kraftabbas</a>, CC BY-SA 4.0</li>
+        <li>Плов — <a href="https://commons.wikimedia.org/wiki/File:Plov_Tashkent.jpg" target="_blank" rel="noopener">Ekrem Canli</a>, CC BY-SA 3.0</li>
+        <li>Ташкент — <a href="https://commons.wikimedia.org/wiki/File:Minor_Mosque_Tashkent.jpg" target="_blank" rel="noopener">Yuriy Pavlovich</a>, CC0</li>
+    </ul>
+  </details>
 </footer>
 
 <div class="mobile-bar">
